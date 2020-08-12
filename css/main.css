@@ -25,8 +25,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	flex-flow: row wrap;
-	align-items: flex-start;
-	flex-basis: auto;
+
 	
 }
 
@@ -83,21 +82,36 @@ header h1 span {
 header nav {
 	/*float: right;*/
 	padding: 46px 0;
+	
+	
 }
+
+	
+
 header nav ul {
 	margin: 0;
 	padding: 0;
+	justify-content: space-between;
+	align-content: space-around;
+	
 }
 header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 0.875em;
 	padding: 0 10px;
-	display: inline;
+	flex-flow: row wrap;
+	display: flex;
+	justify-content: flex-start;	
+	flex-basis: content;
+	
+	
+	
 }
 header nav ul li a{
 	text-decoration: none;
 	color:#77a466;
+	
 }
 
 /*The widths are in a percentage!*/
@@ -105,12 +119,7 @@ header nav ul li a{
 .bottom-section {
 	margin: 0 auto;
 	/*clear: both;*/
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-flow: row wrap;
-	align-items: flex-start;
-	flex-basis: auto;
+
 	
 }
 
@@ -141,10 +150,15 @@ header nav ul li a{
 .section-one,
 .section-two,
 .section-three {
-	width: 33%;
+	width: fit-content;
 	height: auto;
-/*	float: left;*/
+  /*float: left; */
 	border-top: 1px solid #eee;
+	display: flex;
+	align-items: flex-start;
+	flex-wrap: wrap;
+
+
 }
 
 .section-one h4 {
